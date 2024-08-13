@@ -17,15 +17,24 @@
 }
 
 .montserrat {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: normal;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto; 
 }
 
 header {
     display: flex;
-    background-color: #444444;
+    background-color: #464646;
     align-items: center;
     justify-content: space-between;
     padding: 1% 20%;
@@ -52,24 +61,95 @@ header li a {
 
 .about {
     position: relative;
-}
-
-.about p,
-.about li { 
-    display: flex;
-    justify-content: center;
-    font-size: 22px;
-
-}
-
-.about p span {
-    font-size: 16px;
-}
-
-.about li a {
-    text-decoration: none;
+    width: fit-content;
 }
 
 .about img {
+    display: block;
     width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+.about p { 
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    color: white;
+}
+
+.about li {
+    display: flex;
+    justify-content: center;
+}
+
+.about li a img {
+    width: 50px;
+}
+
+.body .skills,
+.body .form{
+    
+}
+
+.body article p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    margin: 2% 0 0 -1%;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.skills li a img {
+    width: 75px;
+    margin: 1% 1%;
+}
+
+.form form {
+    resize: none;
+}
+
+.form h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    margin: 3% 0 1% 0;
+}
+
+.form form input,
+.form form textarea,
+.form form button {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 40% 1% 40%;
+    padding: 5px 125px 5px 5px;
+}
+
+.form form textarea {
+    padding-bottom: 150px;
+}
+
+.form form button {
+    background-color: #464646;
+    color: #ffffff;
+    padding: 5px 125px 5px 5px;
+    cursor: pointer;
+    padding-left: 124px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    background-color: #464646;
+    color: white;
+    padding: 1% 20%;
 }
